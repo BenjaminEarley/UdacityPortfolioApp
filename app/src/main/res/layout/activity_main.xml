@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:background="#ECEFF1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_purple"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/header"
+        android:textColor="#212121"
+        android:id="@+id/header"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="25dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="42dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spotifyStreamer"
+            android:textColor="#212121"
+            android:id="@+id/spotifyStreamer"
+            android:minWidth="180dp"
+            android:background="@color/udacityOrange"
+            android:layout_marginBottom="8dp"
+            android:onClick="launchSpotifyStreamer" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scoresApp"
+            android:textColor="#212121"
+            android:id="@+id/scoresApp"
+            android:minWidth="180dp"
+            android:background="@color/udacityOrange"
+            android:layout_marginBottom="8dp"
+            android:onClick="launchScoresApp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/libraryApp"
+            android:textColor="#212121"
+            android:id="@+id/libraryApp"
+            android:minWidth="180dp"
+            android:background="@color/udacityOrange"
+            android:layout_marginBottom="8dp"
+            android:onClick="launchLibraryApp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buildItBigger"
+            android:textColor="#212121"
+            android:id="@+id/buildItBigger"
+            android:minWidth="180dp"
+            android:background="@color/udacityOrange"
+            android:layout_marginBottom="8dp"
+            android:onClick="launchBuildItBigger"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/XYZApp"
+            android:textColor="#212121"
+            android:id="@+id/XYZApp"
+            android:minWidth="180dp"
+            android:background="@color/udacityOrange"
+            android:layout_marginBottom="8dp"
+            android:onClick="launchXYZReader"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capstone"
+            android:textColor="#212121"
+            android:id="@+id/capstone"
+            android:minWidth="180dp"
+            android:background="#DD2C00"
+            android:layout_marginBottom="8dp"
+            android:onClick="launchCapstone"/>
+    </LinearLayout>
+
+</RelativeLayout>
