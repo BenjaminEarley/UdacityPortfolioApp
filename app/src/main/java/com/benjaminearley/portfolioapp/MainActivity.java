@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void launchScoresApp(View view) {
-        Intent i = manager.getLaunchIntentForPackage("com.benjaminearley.spotifystreamer");
+        Intent i = manager.getLaunchIntentForPackage("barqsoft.footballscores");
 
         if (i != null) {
             i.addCategory(Intent.CATEGORY_LAUNCHER);
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void launchLibraryApp(View view) {
-        Intent i = manager.getLaunchIntentForPackage("com.benjaminearley.spotifystreamer");
+        Intent i = manager.getLaunchIntentForPackage("it.jaschke.alexandria");
 
         if (i != null) {
             i.addCategory(Intent.CATEGORY_LAUNCHER);
