@@ -1,7 +1,5 @@
 package com.benjaminearley.portfolioapp;
 
-import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -10,8 +8,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private PackageManager manager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,21 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        manager = this.getPackageManager();
     }
 
     public void launchSpotifyStreamer(View view) {
-
-        Intent i = manager.getLaunchIntentForPackage("com.benjaminearley.spotifystreamer");
-
-        if (i != null) {
-            i.addCategory(Intent.CATEGORY_LAUNCHER);
-        } else {
-            Toast.makeText(this, "This button should launch my Spotify Streamer App!", Toast.LENGTH_LONG).show();
-        }
-        this.startActivity(i);
-
+        Toast.makeText(this, "This button will launch my Spotify Streamer App!", Toast.LENGTH_LONG).show();
     }
     public void launchScoresApp(View view) {
         Toast.makeText(this, "This button will launch my Scores App!", Toast.LENGTH_LONG).show();
